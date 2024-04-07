@@ -6,7 +6,7 @@ img = cv2.imread('estacionamento.png') # Abre a img
 vagas = []
 
 for x in range(69): # 69 é o número de vagas do estacionamento do vídeo usado como base
-    vaga = cv2.selectROI('vagas', img, False)
+    vaga = cv2.selectROI('vagas', img, False) # Nos permite selecionar um ROI(espaço da imagem) manualmente 
     cv2.destroyWindow('vagas')
     vagas.append((vaga))
 

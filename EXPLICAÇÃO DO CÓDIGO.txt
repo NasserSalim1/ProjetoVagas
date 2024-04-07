@@ -1,0 +1,38 @@
+- The code is used to create a file that stores the coordinates of each parking spot in an image.
+ 
+- This will be useful for future reference when trying to identify which spots are available and which ones are occupied.
+ 
+- The first line imports the OpenCV library, which is used for computer vision tasks such as image recognition and processing.
+- The second line reads the image "estacionamento.png" into memory and assigns it to the variable "img".
+ 
+- Next, we create an empty list called "vagas".
+
+- This list will store all of our selected regions of interest (ROIs), or in this case, parking spots.
+
+- We then use a for loop to iterate through 69 times since there are 69 parking spots in the image.
+
+- Inside the loop, we use OpenCV's selectROI function to allow us to manually select a region on the image using our mouse.
+
+-The first argument 'vagas' is just a name given to this window where we can make selections.
+ 
+- The second argument 'img' is the actual image being displayed on this window.
+
+- And finally, False indicates that we do not want any additional options while making selections.
+ 
+- Once we have made our selection by clicking and dragging with our mouse, we close this window using cv2.destroyWindow() so that it does not interfere with selecting other ROIs.
+
+- Then, we append these coordinates (x,y,w,h) as tuples into our vagas list.
+ 
+- These values represent: x-coordinate of top-left corner, y-coordinate of top-left corner, width of ROI rectangle and height of ROI rectangle respectively.
+
+- After iterating through all 69 parking spots, another for loop goes through each tuple inside vagas list one by one and draws rectangles around them on img using cv2.rectangle().
+ 
+- We pass in arguments like source(image), starting point(top-left coordinate), ending point(bottom-right coordinate), color(Blue here but could be changed according your wish)and thickness(2
+ 
+- The code creates a file called "vagas.pkl" that contains information about the parking spaces in an image.
+ 
+- It uses the cv2 library to open and manipulate the image, and the pickle library to save the information in an external file.
+ 
+-The code loops through all 69 parking spaces, selecting each one and adding its coordinates to a list called "vagas".
+ 
+- Finally, it saves this list in the "vagas.pkl" file using the pickle.dump() function.
