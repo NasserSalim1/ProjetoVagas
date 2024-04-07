@@ -2,6 +2,9 @@
 
 Este projeto utiliza a biblioteca OpenCV para detectar vagas de estacionamento em uma imagem estática e em um vídeo em tempo real.
 
+![image](https://github.com/NasserSalim1/ProjetoVagas/assets/87777276/39fd5b2e-5674-4dee-a180-4cd44208d334)
+
+
 ## Visão Geral
 
 O objetivo deste projeto é fornecer uma solução para identificar vagas de estacionamento disponíveis em um estacionamento através do processamento de imagens estáticas e vídeos em tempo real. O processo é dividido em duas etapas principais:
